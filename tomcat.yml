@@ -1,5 +1,5 @@
 ---
-- hosts: ansibleclient
+- hosts: tomcat
   become: yes
   vars:
     tomcat_download_url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.22/bin/apache-tomcat-10.0.22.tar.gz
