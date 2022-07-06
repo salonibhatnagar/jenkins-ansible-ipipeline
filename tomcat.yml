@@ -48,8 +48,8 @@
         dest: /etc/systemd/system/tomcat.service
     - name: Starting Apache Tomcat service
       service:
+        daemon_reload: yes
         name: tomcat
         state: started
         enabled: yes
-        daemon_reload: yes
       when: ansible_service_mgr == "systemd"
