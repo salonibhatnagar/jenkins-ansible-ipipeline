@@ -51,8 +51,8 @@
       when: ansible_service_mgr == 'systemd'
     - name: start and enable tomcat_
       service:
-        daemon_reload: yes
         name: tomcat 
         state: started 
         enabled: yes
+        daemon_reload: yes
       when: ansible_service_mgr == 'systemd'
